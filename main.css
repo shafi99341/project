@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+}
+
+body {
+    min-height: 95vh;
+}
+
+.navbar {
+    height: 60px;
+    background-image: linear-gradient(to right bottom, #5433FF, #20BDFF, #A5FECB);
+    position: relative;
+}
+
+.search {
+    height: 40px;
+    position: absolute;
+    border-radius: 100px;
+    width: 20%;
+    border: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+}
+
+.search:focus {
+    outline: none;
+}
+
+.btn-info {
+    top: 40%;
+    left: 61%;
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.result {
+    min-height: 100vh;
+    background-color: white;
+
+    display: flex;
+}
+
+.lists {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie {
+    flex-basis: 60%;
+    background-color: aliceblue;
+}
+
+.list {
+    display: flex;
+    border-bottom: 1px solid #aaa;
+}
+
+.list__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 25px;
+}
+
+.list__content:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.list__button {
+    align-self: flex-start;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 100px;
+    background-image: linear-gradient(to right bottom, #fc4a1a, #f7b733);
+    cursor: pointer;
+}
+
+.list__heading {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.list__overview {
+    font-size: 12px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.movie {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.movie__image {
+    width: 100%;
+}
+
+.movie__title {
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 900;
+    margin: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.line-2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.line-3,
+.line-4 {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.budget,
+.language {
+    flex-basis: 50%;
+}
+
+.genre_btn {
+    border: none;
+    padding: 5px 13px;
+    border-radius: 5px;
+}
+
+.rating {
+    font-size: 25px;
+}
+
+.genres__wrapper {
+    display: flex;
+}
+
+.genres {
+    flex-basis: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 10px;
+    background-color: aliceblue;
+}
+
+.runtime {
+    background-color: aliceblue;
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Action {
+    background-color: #FF4136
+}
+
+.Fantasy {
+    background-color: #0074D9
+}
+
+.Drama {
+    background-color: #2ECC40
+}
+
+.Adventure {
+    background-color: #FFDC00
+}
+
+.Science {
+    background-color: #FF851B
+}
+
+.movie__overview {
+    padding: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+.tagline {
+    font-size: 18px;
+    font-style: italic;
+}
